@@ -1,6 +1,6 @@
 export function WhatIDo() {
   return (
-    <section className="border-b border-border/50">
+    <section id="what-i-do" className="border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
         <h2 className="mb-8 text-3xl md:text-5xl max-w-3xl leading-tight">What I Do</h2>
 
