@@ -22,7 +22,7 @@ export function SelectedWork() {
 
   return (
     <section id="work" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50 flex flex-col justify-center">
-      <div className="max-w-[95vw] mx-auto px-4 md:px-6 py-12 md:py-20 w-full">
+      <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-12 md:py-20 w-full">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
             <h2 className="mb-4 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Selected Work</h2>
