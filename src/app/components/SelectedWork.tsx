@@ -21,38 +21,44 @@ export function SelectedWork() {
   ];
 
   return (
-    <section id="work" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
-        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Selected Work</h2>
+    <section id="work" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50 flex flex-col justify-center">
+      <div className="max-w-[95vw] mx-auto px-4 md:px-6 py-12 md:py-20 w-full">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div>
+            <h2 className="mb-4 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Selected Work</h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+              Proof across enterprise + product.
+            </p>
+          </div>
+          <button className="hidden md:block px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors font-mono uppercase text-sm tracking-wider h-fit">
+            View all work
+          </button>
+        </div>
 
-        <p className="mb-16 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-          Proof across enterprise + product.
-        </p>
-
-        <div className="space-y-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {cases.map((caseStudy, index) => (
-            <div key={index} className="border border-border/50 p-8 bg-card hover:bg-muted/50 transition-colors">
+            <div key={index} className="border border-border/50 p-6 lg:p-8 bg-card hover:bg-muted/50 transition-colors flex flex-col justify-between h-full group">
               <div className="mb-6">
-                <h3 className="mb-4 text-2xl md:text-3xl leading-tight">{caseStudy.title}</h3>
-                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">{caseStudy.description}</p>
-                <p className="mb-4 leading-relaxed">{caseStudy.impact}</p>
+                <h3 className="mb-3 text-2xl leading-tight group-hover:text-primary transition-colors">{caseStudy.title}</h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm lg:text-base">{caseStudy.description}</p>
+                <p className="mb-4 leading-relaxed text-sm font-medium">{caseStudy.impact}</p>
                 <div className="flex flex-wrap gap-2">
                   {caseStudy.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="px-3 py-1 bg-secondary text-sm font-mono border border-border/50">
+                    <span key={tagIndex} className="px-2 py-1 bg-secondary text-xs font-mono border border-border/50 text-muted-foreground">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
-              <button className="px-6 py-2 bg-primary text-primary-foreground hover:opacity-90 transition-opacity">
-                Read case
+              <button className="w-full text-left pt-4 border-t border-border/50 text-xs font-mono uppercase tracking-wider text-muted-foreground group-hover:text-primary transition-colors">
+                Read case &rarr;
               </button>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <button className="px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors font-mono uppercase text-sm tracking-wider">
+        <div className="mt-8 md:hidden">
+          <button className="w-full px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors font-mono uppercase text-sm tracking-wider">
             View all work
           </button>
         </div>
