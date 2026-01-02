@@ -1,10 +1,10 @@
 export function Contact() {
   return (
-    <section id="contact" className="border-b border-border/50">
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
+    <section id="contact" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
+      <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="mb-6 text-3xl md:text-5xl leading-tight">Get in Touch</h2>
+            <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Get in Touch</h2>
             <p className="mb-8 text-lg font-mono text-muted-foreground leading-relaxed max-w-sm">
               [ STATUS: OPEN FOR Q2 2026 ]<br />
               Available for select product and design engagements.

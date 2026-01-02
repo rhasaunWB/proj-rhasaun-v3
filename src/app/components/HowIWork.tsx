@@ -23,30 +23,29 @@ export function HowIWork() {
   ];
 
   return (
-    <section className="border-b border-border/50">
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
-        <h2 className="mb-6 text-3xl md:text-5xl max-w-3xl leading-tight">How I Work</h2>
+    <section id="how" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
+      <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-12 md:py-20">
+        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">How I Work</h2>
 
         <p className="mb-16 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
           A clear loop: discover → design → architect → ship → learn.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pillars.map((pillar, index) => (
-            <div key={index} className="border border-border/50 p-8 bg-card hover:bg-muted/50 transition-colors">
-              <h3 className="mb-4 text-2xl leading-tight">Pillar {index + 1} — {pillar.title}</h3>
-              <p className="mb-6 text-muted-foreground leading-relaxed">{pillar.description}</p>
-              <ul className="space-y-2 mb-6">
-                {pillar.laws.map((law, lawIndex) => (
-                  <li key={lawIndex} className="text-sm flex items-center gap-2 leading-relaxed">
-                    <span className="w-2 h-2 bg-primary flex-shrink-0"></span>
-                    {law}
-                  </li>
-                ))}
-              </ul>
-              <button className="px-6 py-2 border border-border/50 hover:bg-secondary transition-colors font-mono text-xs uppercase tracking-wider">
-                View Laws
-              </button>
+            <div key={index} className="border border-border/50 p-6 bg-card hover:bg-muted/50 transition-colors flex flex-col justify-between h-full">
+              <div>
+                <h3 className="mb-3 text-xl leading-tight">Pillar {index + 1} — {pillar.title}</h3>
+                <p className="mb-4 text-muted-foreground leading-relaxed text-sm">{pillar.description}</p>
+                <ul className="space-y-2 mb-4">
+                  {pillar.laws.map((law, lawIndex) => (
+                    <li key={lawIndex} className="text-xs flex items-center gap-2 leading-relaxed">
+                      <span className="w-1.5 h-1.5 bg-primary flex-shrink-0"></span>
+                      {law}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

@@ -7,9 +7,9 @@ interface TechnicalLayoutProps {
 export function TechnicalLayout({ children }: TechnicalLayoutProps) {
   return (
     <div className="relative min-h-screen bg-background text-foreground transition-colors duration-700">
-      {/* Grid Background */}
+      {/* Grid Background - Elevated to overlay sticky sections */}
       <div
-        className="fixed inset-0 pointer-events-none z-0 opacity-[0.1] [.light_&]:opacity-[0.03]"
+        className="fixed inset-0 pointer-events-none z-20 opacity-[0.05] [.light_&]:opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(to right, currentColor 1px, transparent 1px),
                             linear-gradient(to bottom, currentColor 1px, transparent 1px)`,
@@ -18,7 +18,7 @@ export function TechnicalLayout({ children }: TechnicalLayoutProps) {
       />
 
       {/* Main Content */}
-      <div className="relative z-10 pt-20 md:pt-0">
+      <div className="relative z-10 md:pt-0">
         {children}
       </div>
     </div>

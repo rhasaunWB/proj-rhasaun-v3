@@ -13,7 +13,7 @@ export function Hero() {
   const words = text.split(" ");
 
   return (
-    <section id="hero" className="min-h-screen pt-24 px-4 md:px-6 border-b border-border/50 bg-background relative overflow-hidden">
+    <section id="hero" className="sticky top-0 z-10 min-h-screen pt-24 px-4 md:px-6 border-b border-border/50 bg-background relative overflow-hidden">
       <div className="w-full max-w-[98vw] mx-auto z-10">
         {/* Massive Headline */}
         <h1 className="mb-12 text-[clamp(3.5rem,9vw,11rem)] leading-[0.9] font-medium tracking-tighter -ml-[0.06em] text-foreground">
