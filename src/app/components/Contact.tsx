@@ -92,7 +92,7 @@ export function Contact() {
                 <img
                   src="https://www.getwrecked.com/wp-content/uploads/2023/05/wrecking-ball-logo-light-bg.png"
                   alt="Wrecking Ball"
-                  className="h-12 w-auto object-contain invert dark:invert-0"
+                  className="h-12 w-auto object-contain invert hue-rotate-180 dark:invert-0 dark:hue-rotate-0"
                 />
               </div>
             </div>
