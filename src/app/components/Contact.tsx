@@ -4,7 +4,7 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="mb-6 text-3xl md:text-5xl leading-tight">Get in Touch</h2>
+            <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Get in Touch</h2>
             <p className="mb-8 text-lg font-mono text-muted-foreground leading-relaxed max-w-sm">
               [ STATUS: OPEN FOR Q2 2026 ]<br />
               Available for select product and design engagements.

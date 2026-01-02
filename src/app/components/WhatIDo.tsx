@@ -4,7 +4,7 @@ export function WhatIDo() {
   return (
     <section id="what-i-do" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
-        <h2 className="mb-8 text-3xl md:text-5xl max-w-3xl leading-tight">What I Do</h2>
+        <h2 className="mb-8 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">What I Do</h2>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
           {/* Left Column: Text Content */}

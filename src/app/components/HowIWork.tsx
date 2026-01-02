@@ -25,7 +25,7 @@ export function HowIWork() {
   return (
     <section id="how" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
-        <h2 className="mb-6 text-3xl md:text-5xl max-w-3xl leading-tight">How I Work</h2>
+        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">How I Work</h2>
 
         <p className="mb-16 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
           A clear loop: discover → design → architect → ship → learn.
