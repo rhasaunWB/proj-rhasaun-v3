@@ -16,9 +16,9 @@ export function Hero() {
     <section id="hero" className="sticky top-0 z-10 min-h-screen pt-24 px-4 md:px-6 border-b border-border/50 bg-background relative overflow-hidden">
       <div className="w-full max-w-[98vw] mx-auto z-10">
         {/* Massive Headline */}
-        <h1 className="mb-12 text-[clamp(3.5rem,9vw,11rem)] leading-[0.9] font-medium tracking-tighter -ml-[0.06em] text-foreground">
+        <h1 className="mb-8 md:mb-12 text-[clamp(3.4rem,8vw,11rem)] leading-[0.9] font-medium tracking-tighter -ml-[0.06em] text-foreground">
           {words.map((word, i) => (
-            <span key={i} className="inline-block overflow-hidden mr-[0.2em] -mb-[0.1em] pb-8 pt-4 align-bottom">
+            <span key={i} className="inline-block overflow-hidden mr-[0.2em] -mb-[0.1em] pb-2 pt-1 align-bottom">
               <motion.span
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
