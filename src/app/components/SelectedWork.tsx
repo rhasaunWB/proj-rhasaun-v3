@@ -21,7 +21,7 @@ export function SelectedWork() {
   ];
 
   return (
-    <section id="work" className="border-b border-border/50">
+    <section id="work" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
         <h2 className="mb-6 text-3xl md:text-5xl leading-tight">Selected Work</h2>
 

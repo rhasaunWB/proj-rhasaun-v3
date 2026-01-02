@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section id="contact" className="border-b border-border/50">
+    <section id="contact" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
