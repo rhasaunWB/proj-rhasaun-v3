@@ -1,4 +1,4 @@
-// import { Header } from "./components/Header";
+import { Header } from "./components/Header";
 import { TechnicalLayout } from "./components/TechnicalLayout";
 import { Hero } from "./components/Hero";
 import { WhatIDo } from "./components/WhatIDo";
@@ -11,7 +11,7 @@ import { Footer } from "./components/Footer";
 export default function App() {
   return (
     <TechnicalLayout>
-      {/* <Header /> */}
+      <Header />
       <Hero />
       <WhatIDo />
       <WhySoftwareFails />
