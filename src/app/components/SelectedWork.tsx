@@ -105,7 +105,7 @@ export function SelectedWork() {
               <motion.div
                 layoutId={`card-container-${caseStudy.id}`}
                 onClick={() => !selectedId && setSelectedId(caseStudy.id)}
-                className={`absolute inset-0 bg-card border border-border/50 overflow-hidden cursor-pointer ${selectedId === caseStudy.id ? 'fixed inset-4 z-50 md:inset-12 border-primary/20 shadow-2xl' : 'hover:bg-muted/50'}`}
+                className={`absolute inset-0 bg-card border border-border/50 overflow-hidden cursor-pointer ${selectedId === caseStudy.id ? 'fixed inset-4 z-50 md:inset-12 border-accent-cyan/20 shadow-2xl' : 'hover:bg-muted/50'}`}
                 animate={{
                   opacity: selectedId && selectedId !== caseStudy.id ? 0 : 1,
                   // When selected, expand to fixed position logic handled by layoutId + class change
@@ -128,7 +128,7 @@ export function SelectedWork() {
                         e.stopPropagation();
                         setSelectedId(null);
                       }}
-                      className="absolute top-6 right-6 p-2 rounded-full bg-secondary hover:bg-destructive/10 hover:text-destructive transition-colors z-50"
+                      className="absolute top-6 right-6 p-2 rounded-full bg-accent-orange/10 hover:bg-accent-orange/20 text-accent-orange transition-colors z-50"
                     >
                       <X size={24} />
                     </motion.button>
@@ -147,15 +147,15 @@ export function SelectedWork() {
                       >
                         <div>
                           <div className="mb-6">
-                            <h3 className="mb-2 text-2xl leading-tight group-hover:text-primary transition-colors">{caseStudy.title}</h3>
+                            <h3 className="mb-2 text-2xl leading-tight group-hover:text-accent-cyan transition-colors">{caseStudy.title}</h3>
                             <p className="text-sm font-mono text-muted-foreground mb-4">{caseStudy.tags[0]} / {caseStudy.tags[1]}</p>
                             <p className="text-muted-foreground mb-4 leading-relaxed text-sm lg:text-base">{caseStudy.description}</p>
                           </div>
                         </div>
 
                         <div className="mt-auto pt-6 border-t border-border/50 flex justify-between items-center group">
-                          <span className="text-xs font-mono uppercase tracking-wider text-muted-foreground group-hover:text-primary transition-colors">Read Case</span>
-                          <Plus size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                          <span className="text-xs font-mono uppercase tracking-wider text-muted-foreground group-hover:text-accent-cyan transition-colors">Read Case</span>
+                          <Plus size={16} className="text-muted-foreground group-hover:text-accent-orange transition-colors" />
                         </div>
                       </motion.div>
                     )}
@@ -174,17 +174,17 @@ export function SelectedWork() {
                       {/* Left Side: Header & Context */}
                       <div className="lg:w-1/3 lg:border-r border-border/50 lg:pr-12 flex flex-col gap-8">
                         <div>
-                          <h3 className="text-4xl md:text-5xl font-medium tracking-tight mb-4">{caseStudy.title}</h3>
+                          <h3 className="text-4xl md:text-5xl font-medium tracking-tight mb-4 text-accent-cyan">{caseStudy.title}</h3>
                           <p className="text-xl text-muted-foreground">{caseStudy.subtitle}</p>
                         </div>
 
                         <div className="space-y-4">
-                          <div className="text-xs font-mono uppercase text-muted-foreground">My Role</div>
+                          <div className="text-xs font-mono uppercase text-accent-cyan">My Role</div>
                           <div className="text-sm">{caseStudy.role}</div>
                         </div>
 
                         <div className="space-y-4">
-                          <div className="text-xs font-mono uppercase text-muted-foreground">Tags</div>
+                          <div className="text-xs font-mono uppercase text-accent-cyan">Tags</div>
                           <div className="flex flex-wrap gap-2">
                             {caseStudy.tags.map(tag => (
                               <span key={tag} className="px-2 py-1 bg-secondary text-xs border border-border/50">{tag}</span>
@@ -197,7 +197,7 @@ export function SelectedWork() {
                       <div className="lg:w-2/3 lg:pl-4 space-y-12">
                         <div>
                           <h4 className="text-lg font-medium mb-4 flex items-center gap-3">
-                            <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                            <span className="w-2 h-2 bg-accent-orange rounded-full"></span>
                             The Problem
                           </h4>
                           <p className="text-lg text-muted-foreground leading-relaxed">{caseStudy.details.problem}</p>
@@ -205,7 +205,7 @@ export function SelectedWork() {
 
                         <div>
                           <h4 className="text-lg font-medium mb-4 flex items-center gap-3">
-                            <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                            <span className="w-2 h-2 bg-accent-cyan rounded-full"></span>
                             The Solution
                           </h4>
                           <p className="text-lg text-muted-foreground leading-relaxed">{caseStudy.details.solution}</p>
@@ -213,7 +213,7 @@ export function SelectedWork() {
 
                         <div>
                           <h4 className="text-lg font-medium mb-4 flex items-center gap-3">
-                            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                             Outcomes
                           </h4>
                           <ul className="grid gap-4">

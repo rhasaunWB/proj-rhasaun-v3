@@ -25,7 +25,7 @@ export function SystemArchitecture() {
         <div className="w-full h-full min-h-[500px] flex items-center justify-center relative overflow-hidden bg-card/5 border border-border/50">
             <svg
                 viewBox="0 0 400 400"
-                className="w-full h-full max-w-[600px] max-h-[600px] text-primary"
+                className="w-full h-full max-w-[600px] max-h-[600px] text-accent-cyan"
             >
                 {/* Draw Connections */}
                 {connections.map((conn, i) => {
@@ -99,7 +99,7 @@ export function SystemArchitecture() {
                 <motion.circle
                     r="3"
                     fill="currentColor"
-                    className="text-primary"
+                    className="text-accent-orange"
                 >
                     <animateMotion
                         dur="8s"

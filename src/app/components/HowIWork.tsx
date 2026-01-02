@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 export function HowIWork() {
   const pillars = [
     {
@@ -33,43 +35,57 @@ export function HowIWork() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pillars.map((pillar, index) => (
-            <div key={index} className="border border-border/50 p-6 bg-card hover:bg-muted/50 transition-colors flex flex-col justify-between h-full">
+            <motion.div
+              key={index}
+              initial={{ x: -50 * (index + 1), opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.15, // Staggered slide effect
+                ease: "easeOut"
+              }}
+              className="border border-border/50 p-6 bg-card hover:bg-muted/50 transition-colors flex flex-col justify-between h-full"
+            >
               <div>
-                <h3 className="mb-3 text-xl leading-tight">Pillar {index + 1} — {pillar.title}</h3>
-                <p className="mb-4 text-muted-foreground leading-relaxed text-sm">{pillar.description}</p>
-                <ul className="space-y-2 mb-4">
+                <h3 className="mb-4 text-3xl leading-tight font-medium">{pillar.title}</h3>
+                <p className="mb-6 text-muted-foreground leading-relaxed text-base md:text-lg">{pillar.description}</p>
+                <ul className="space-y-3 mb-4">
                   {pillar.laws.map((law, lawIndex) => (
-                    <li key={lawIndex} className="text-xs flex items-center gap-2 leading-relaxed">
+                    <li key={lawIndex} className="text-sm md:text-base flex items-center gap-3 leading-relaxed">
                       <span className="w-1.5 h-1.5 bg-primary flex-shrink-0"></span>
                       {law}
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-3 md:gap-4 text-sm text-muted-foreground">
-          <span className="flex items-center gap-2">
-            <span className="w-4 h-4 bg-primary flex-shrink-0"></span>
-            Discover
-          </span>
-          <span className="hidden md:inline">→</span>
-          <span className="flex items-center gap-2">
-            <span className="w-4 h-4 bg-primary flex-shrink-0"></span>
-            Design
-          </span>
-          <span className="hidden md:inline">→</span>
-          <span className="flex items-center gap-2">
-            <span className="w-4 h-4 bg-primary flex-shrink-0"></span>
-            Architect
-          </span>
-          <span className="hidden md:inline">→</span>
-          <span className="flex items-center gap-2">
-            <span className="w-4 h-4 bg-primary flex-shrink-0"></span>
-            Ship
-          </span>
+          {["Discover", "Design", "Architect", "Ship"].map((label, idx) => (
+            <div key={label} className="flex items-center">
+              <span className="flex items-center gap-2">
+                <motion.span
+                  className="w-4 h-4 bg-primary flex-shrink-0"
+                  initial={{ backgroundColor: "var(--primary)", scale: 1 }}
+                  whileInView={{
+                    backgroundColor: ["var(--primary)", "var(--accent-cyan)", "var(--accent-cyan)", "var(--primary)"],
+                    scale: [1, 1, 1.2, 1]
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 2.5, // Longer total duration
+                    times: [0, 0.2, 0.8, 1], // White -> Cyan (0.2), Hold Cyan (until 0.8), Pulse/White (0.8-1)
+                    delay: 1.0 + (idx * 0.2) // Staggered start
+                  }}
+                ></motion.span>
+                {label}
+              </span>
+              {idx < 3 && <span className="hidden md:inline mx-3">→</span>}
+            </div>
+          ))}
         </div>
       </div>
     </section>
