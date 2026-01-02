@@ -9,7 +9,7 @@ export function TechnicalLayout({ children }: TechnicalLayoutProps) {
     <div className="relative min-h-screen bg-background text-foreground transition-colors duration-700">
       {/* Grid Background */}
       <div
-        className="fixed inset-0 pointer-events-none z-0 opacity-[0.03]"
+        className="fixed inset-0 pointer-events-none z-0 opacity-[0.1] [.light_&]:opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(to right, currentColor 1px, transparent 1px),
                             linear-gradient(to bottom, currentColor 1px, transparent 1px)`,
