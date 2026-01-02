@@ -1,0 +1,30 @@
+# Rhasaun Campbell - Portfolio & Services
+
+## Overview
+Rhasaun Campbell is a customer-centric and results-driven professional with over 5+ years of experience in professional services. He specializes in bridging the gap between strategy, technology consulting, and product development, helping teams reduce product, UX, and architecture risk before it becomes expensive.
+
+## Core Expertise
+- **Services GTM Strategy & Execution**: Defining and executing go-to-market strategies for professional services.
+- **Digital Transformation & CX Strategy**: Leading digital transformation initiatives and enhancing customer experience.
+- **Digital Marketing**: Strategic marketing alignment.
+- **Product Development**: Expertise in Agile and Lean product development methodologies.
+- **Leadership**: Cross-functional team leadership, mentoring, and professional development.
+
+## Selected Work
+1. **Adobe Discover**: Architected a headless content engine (AEM) for 10M+ monthly users across Creative Cloud, enabling syndication as a product API.
+2. **Royal Caribbean**: Designed a personalized pricing engine for the homepage, driving $2.9M+ incremental revenue through real-time inventory-aware decisioning.
+3. **Viacom**: Modernized a legacy component system for 50+ brand websites (MTV, Comedy Central), enabling rapid multi-brand deployment.
+
+## Philosophy ("How I Work")
+"Designing and delivering software that survives real-world complexity."
+**Process Loop**: Discover → Design → Architect → Ship → Learn.
+**Principles**:
+- Problem-first thinking.
+- Consistency compounds.
+- Modularity from day one.
+- Ship small, learn fast.
+
+## Contact Information
+- **Email**: consultation@rhasaun.com
+- **LinkedIn**: [Rhasaun Campbell](https://www.linkedin.com/in/rhasauncampbell/)
+- **Availability**: Accepting new projects for strategic product consulting, UX architecture, and design system work.
