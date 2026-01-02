@@ -74,12 +74,12 @@ export function SelectedWork() {
   ];
 
   return (
-    <section id="work" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50 flex flex-col justify-center overflow-hidden">
+    <section id="work" className="relative md:sticky md:top-0 z-10 min-h-screen bg-background border-b border-border/50 flex flex-col justify-center md:overflow-hidden">
       <div className="relative w-full h-full max-w-[98vw] mx-auto px-4 md:px-6 py-12 md:py-20 flex flex-col justify-center">
 
         {/* Section Header - Fades out when a case is selected */}
         <motion.div
-          className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+          className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6"
           animate={{
             opacity: selectedId ? 0 : 1,
             y: selectedId ? -20 : 0,
@@ -100,12 +100,12 @@ export function SelectedWork() {
           {cases.map((caseStudy) => (
             <div key={caseStudy.id} className={`relative ${selectedId === caseStudy.id ? 'z-50' : 'z-0'}`}>
               {/* Placeholder to keep grid layout stable while the actual card expands */}
-              <div className="invisible border border-border/50 p-6 lg:p-8 flex flex-col justify-between h-[400px]"></div>
+              <div className="invisible border border-border/50 p-6 lg:p-8 flex flex-col justify-between h-[300px]"></div>
 
               <motion.div
                 layoutId={`card-container-${caseStudy.id}`}
                 onClick={() => !selectedId && setSelectedId(caseStudy.id)}
-                className={`absolute inset-0 bg-card border border-border/50 overflow-hidden cursor-pointer ${selectedId === caseStudy.id ? 'fixed inset-4 z-50 md:inset-12 border-accent-cyan/20 shadow-2xl' : 'hover:bg-muted/50'}`}
+                className={`absolute inset-0 bg-card border border-border/50 overflow-hidden cursor-pointer ${selectedId === caseStudy.id ? 'fixed inset-0 z-50 md:inset-12 border-accent-cyan/20 shadow-2xl' : 'hover:bg-muted/50'}`}
                 animate={{
                   opacity: selectedId && selectedId !== caseStudy.id ? 0 : 1,
                   // When selected, expand to fixed position logic handled by layoutId + class change
@@ -116,7 +116,7 @@ export function SelectedWork() {
                 }}
               >
                 {/* Inner Content Container */}
-                <motion.div className="flex flex-col h-full p-6 lg:p-12 relative w-full">
+                <motion.div className="flex flex-col h-full p-6 pt-20 md:pt-6 lg:p-12 relative w-full">
 
                   {/* Close Button - Only visible when expanded */}
                   {selectedId === caseStudy.id && (
@@ -128,7 +128,7 @@ export function SelectedWork() {
                         e.stopPropagation();
                         setSelectedId(null);
                       }}
-                      className="absolute top-6 right-6 p-2 rounded-full bg-accent-orange/10 hover:bg-accent-orange/20 text-accent-orange transition-colors z-50"
+                      className="absolute top-20 md:top-6 right-6 p-2 rounded-full bg-accent-orange/10 hover:bg-accent-orange/20 text-accent-orange transition-colors z-50"
                     >
                       <X size={24} />
                     </motion.button>
