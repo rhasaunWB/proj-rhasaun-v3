@@ -63,9 +63,9 @@ export function HowIWork() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-3 md:gap-4 text-sm text-muted-foreground">
+        <div className="mt-12 grid grid-cols-2 md:flex md:flex-wrap md:items-center md:justify-center gap-y-6 gap-x-12 md:gap-4 text-sm text-muted-foreground w-full max-w-sm mx-auto md:max-w-none">
           {["Discover", "Design", "Architect", "Ship"].map((label, idx) => (
-            <div key={label} className="flex items-center">
+            <div key={label} className="flex items-center justify-start">
               <span className="flex items-center gap-2">
                 <motion.span
                   className="w-4 h-4 bg-primary flex-shrink-0"

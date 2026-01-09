@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { Sun, Moon } from "lucide-react";
 import logoDark from "../../assets/logo-dark.svg";
 import logoLight from "../../assets/logo-light.svg";
 
@@ -66,9 +67,10 @@ export function Header() {
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="font-mono text-xs tracking-wider uppercase hover:opacity-70 transition-opacity flex items-center gap-2"
+            className="hover:opacity-70 transition-opacity flex items-center justify-center p-1"
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
           >
-            <span>{isDarkMode ? "[ LIGHT ]" : "[ DARK ]"}</span>
+            {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
 
           {/* Menu Toggle */}
