@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section id="contact" className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
+    <section id="contact" className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-20 md:py-32">
         {/* Header - separate row */}
         <h2 className="mb-12 md:mb-24 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Get in Touch</h2>

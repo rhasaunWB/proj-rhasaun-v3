@@ -25,7 +25,7 @@ export function HowIWork() {
   ];
 
   return (
-    <section id="how" className="relative md:sticky md:top-0 z-10 min-h-screen bg-background border-b border-border/50">
+    <section id="how" className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-12 md:py-20">
         <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">How I Work</h2>
 
