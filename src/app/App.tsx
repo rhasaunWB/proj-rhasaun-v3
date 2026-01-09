@@ -8,6 +8,7 @@ import { SelectedWork } from "./components/SelectedWork";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { StickyScrollSection } from "./components/StickyScrollSection";
+import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
   return (
@@ -34,13 +35,11 @@ export default function App() {
         <SelectedWork />
       </StickyScrollSection>
 
-      <StickyScrollSection index={5} zIndex={50}>
-        <Contact />
-      </StickyScrollSection>
-
       <div className="relative z-[60] bg-background">
+        <Contact />
         <Footer />
       </div>
+      <Toaster />
     </TechnicalLayout>
   );
 }
