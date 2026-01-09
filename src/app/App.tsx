@@ -6,7 +6,6 @@ import { WhySoftwareFails } from "./components/WhySoftwareFails";
 import { HowIWork } from "./components/HowIWork";
 import { SelectedWork } from "./components/SelectedWork";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
 import { StickyScrollSection } from "./components/StickyScrollSection";
 import { Toaster } from "./components/ui/sonner";
 
@@ -37,7 +36,6 @@ export default function App() {
 
       <div className="relative z-[60] bg-background">
         <Contact />
-        <Footer />
       </div>
       <Toaster />
     </TechnicalLayout>
