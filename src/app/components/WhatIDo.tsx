@@ -10,18 +10,16 @@ export function WhatIDo() {
           {/* Left Column: Text Content */}
           <div className="space-y-8">
             <p className="text-lg md:text-xl leading-relaxed">
-              I work across the full lifecycle of modern software—helping teams turn complex ideas into
+              I work across the full lifecycle of modern software. I help teams turn complex ideas into
               systems that can actually be built, shipped, and evolved.
             </p>
 
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              My focus isn't just getting something live. It's making sure the early decisions don't quietly limit
-              what the product can become later.
-            </p>
+            My focus goes beyond getting something live. I ensure the early decisions don't quietly limit
+            what the product can become later.
 
             <div className="pt-8">
               <h3 className="mb-6 text-2xl md:text-3xl leading-tight">
-                Clarifying what to build—and why
+                Clarifying what to build and why
               </h3>
               <div className="space-y-4">
                 <div className="pl-6 border-l border-primary">
