@@ -9,7 +9,7 @@ export function WhySoftwareFails() {
   ];
 
   return (
-    <section className="sticky top-0 z-10 min-h-screen bg-background border-b border-border/50">
+    <section className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-20 md:py-32">
         <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Why Software Fails</h2>
 

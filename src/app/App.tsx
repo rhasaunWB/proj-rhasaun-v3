@@ -7,18 +7,39 @@ import { HowIWork } from "./components/HowIWork";
 import { SelectedWork } from "./components/SelectedWork";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { StickyScrollSection } from "./components/StickyScrollSection";
+import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
   return (
     <TechnicalLayout>
       <Header />
-      <Hero />
-      <WhatIDo />
-      <WhySoftwareFails />
-      <HowIWork />
-      <SelectedWork />
-      <Contact />
-      <Footer />
+
+      <StickyScrollSection index={0} zIndex={0}>
+        <Hero />
+      </StickyScrollSection>
+
+      <StickyScrollSection index={1} zIndex={10}>
+        <WhatIDo />
+      </StickyScrollSection>
+
+      <StickyScrollSection index={2} zIndex={20}>
+        <WhySoftwareFails />
+      </StickyScrollSection>
+
+      <StickyScrollSection index={3} zIndex={30}>
+        <HowIWork />
+      </StickyScrollSection>
+
+      <StickyScrollSection index={4} zIndex={40}>
+        <SelectedWork />
+      </StickyScrollSection>
+
+      <div className="relative z-[60] bg-background">
+        <Contact />
+        <Footer />
+      </div>
+      <Toaster />
     </TechnicalLayout>
   );
 }

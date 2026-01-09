@@ -74,7 +74,7 @@ export function SelectedWork() {
   ];
 
   return (
-    <section id="work" className="relative md:sticky md:top-0 z-10 min-h-screen bg-background border-b border-border/50 flex flex-col justify-center md:overflow-hidden">
+    <section id="work" className="min-h-screen bg-background border-b border-border/50 flex flex-col justify-center md:overflow-hidden">
       <div className="relative w-full h-full max-w-[98vw] mx-auto px-4 md:px-6 py-12 md:py-20 flex flex-col justify-center">
 
         {/* Section Header - Fades out when a case is selected */}
