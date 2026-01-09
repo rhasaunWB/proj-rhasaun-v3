@@ -279,7 +279,7 @@ function Group4() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[45.91%_79.44%_53.75%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 1 — IDEATION</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[45.91%_79.44%_53.75%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 1 : IDEATION</p>
       <div className="absolute inset-[47.18%_55%_52.82%_11.94%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.21%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 478 2">
@@ -309,7 +309,7 @@ function Group4() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[45.91%_40.35%_53.75%_52.5%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 2 — UI/UX</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[45.91%_40.35%_53.75%_52.5%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 2 : UI/UX</p>
       <div className="absolute inset-[47.18%_14.44%_52.82%_52.5%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.21%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 478 2">
@@ -339,7 +339,7 @@ function Group4() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[53.27%_76.74%_46.39%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 3 — ARCHITECTURE</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[53.27%_76.74%_46.39%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 3 : ARCHITECTURE</p>
       <div className="absolute inset-[54.55%_55%_45.45%_11.94%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.21%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 478 2">
@@ -369,7 +369,7 @@ function Group4() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[53.27%_38.68%_46.39%_52.5%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 4 — DELIVERY</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[53.27%_38.68%_46.39%_52.5%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">PILLAR 4 : DELIVERY</p>
       <div className="absolute inset-[54.55%_14.44%_45.45%_52.5%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.21%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 478 2">
@@ -467,7 +467,7 @@ function Group7() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[67.73%_74.24%_31.93%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">CASE STUDY — ADOBE DISCOVER</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[67.73%_74.24%_31.93%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">CASE STUDY : ADOBE DISCOVER</p>
       <div className="absolute inset-[69%_36.94%_31%_11.94%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.14%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 738 2">
@@ -513,7 +513,7 @@ function Group7() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[73.86%_76.81%_25.8%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">CASE STUDY — ADOBE ECP</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[73.86%_76.81%_25.8%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">CASE STUDY : ADOBE ECP</p>
       <div className="absolute inset-[75.14%_39.72%_24.86%_11.94%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.14%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 698 2">
@@ -559,7 +559,7 @@ function Group7() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[80%_78.19%_19.66%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">CASE STUDY — VIACOM</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[80%_78.19%_19.66%_11.94%] leading-[normal] not-italic text-[#5a5a5a] text-[12px] text-nowrap">CASE STUDY : VIACOM</p>
       <div className="absolute inset-[81.27%_35.56%_18.73%_11.94%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.13%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 758 2">
@@ -751,7 +751,7 @@ function Group11() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[99.77%_76.81%_-0.11%_10.28%] leading-[normal] not-italic text-[#7a7a7a] text-[12px] text-nowrap">Footer — small links / socials / ©</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[99.77%_76.81%_-0.11%_10.28%] leading-[normal] not-italic text-[#7a7a7a] text-[12px] text-nowrap">Footer : small links / socials / ©</p>
       <div className="absolute inset-[99.95%_12.22%_0.05%_68.06%]" data-name="Vector">
         <div className="absolute inset-[-1px_-0.35%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 286 2">
@@ -776,7 +776,7 @@ export default function Frame() {
           </svg>
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[1.18%_61.11%_98.48%_8.33%] leading-[normal] not-italic text-[#8a8a8a] text-[12px] text-nowrap">Homepage wireframe (desktop) — 1440 × 4400 — content container: 1200px</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal inset-[1.18%_61.11%_98.48%_8.33%] leading-[normal] not-italic text-[#8a8a8a] text-[12px] text-nowrap">Homepage wireframe (desktop) : 1440 × 4400 : content container: 1200px</p>
       <Group />
       <Group1 />
       <Group3 />

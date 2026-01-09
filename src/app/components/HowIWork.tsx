@@ -9,7 +9,7 @@ export function HowIWork() {
     },
     {
       title: "UI/UX",
-      description: "Creating interfaces that feel inevitable—not just usable",
+      description: "Creating interfaces that feel inevitable, not merely usable",
       laws: ["Consistency compounds", "Simplicity is strategic", "Test early, test often"]
     },
     {

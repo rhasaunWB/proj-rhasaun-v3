@@ -3,7 +3,7 @@ import { Misalignment } from "./animations/Misalignment";
 export function WhySoftwareFails() {
   const failures = [
     "Building features without understanding the underlying system complexity",
-    "Shipping fast without architectural clarity—creating technical debt from day one",
+    "Shipping fast without architectural clarity, creating technical debt from day one",
     "Designing for edge cases instead of the core problem",
     "Treating design and engineering as separate handoffs instead of continuous collaboration"
   ];
