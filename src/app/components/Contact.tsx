@@ -5,7 +5,7 @@ export function Contact() {
     <section id="contact" className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-20 md:py-32">
         {/* Header - separate row */}
-        <h2 className="mb-12 md:mb-24 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Get in Touch</h2>
+        <h2 className="mb-12 md:mb-24 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight bg-gradient-to-r from-emerald-200 to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(45,212,191,0.5)]">Get in Touch</h2>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
 
