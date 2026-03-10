@@ -24,7 +24,7 @@ export default async function handler(req, res) {
             properties: {
                 Name: { title: [{ text: { content: name } }] },
                 Email: { email: email },
-                Message: { rich_text: [{ text: { content: message } }] },
+                message: { rich_text: [{ text: { content: message } }] },
                 // 'Submitted At': { date: { start: new Date().toISOString() } },
             },
         });

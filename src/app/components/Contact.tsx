@@ -5,7 +5,7 @@ export function Contact() {
     <section id="contact" className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-20 md:py-32">
         {/* Header - separate row */}
-        <h2 className="mb-12 md:mb-24 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Get in Touch</h2>
+        <h2 className="mb-12 md:mb-24 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">Get in Touch</h2>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
 
@@ -34,37 +34,8 @@ export function Contact() {
               <ContactForm />
             </div>
 
-          </div>
-
-          {/* Right Column - Bio & Connect/Partnerships */}
-          <div className="border-l border-border/50 pl-8 md:pl-12 py-2 flex flex-col justify-between">
-
-            {/* About */}
-            <div className="mb-12">
-              <h3 className="mb-4 text-xl font-mono uppercase tracking-wider text-muted-foreground">About Rhasaun</h3>
-              <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-                <p>
-                  I am a customer centric and results-driven professional, with over 5+ years in professional services business having honed my craft in roles ranging from customer facing strategy & technology consulting, product development, transformation leader and now leading services strategy and programs of a thriving professional services business.
-                </p>
-                <p>
-                  I am known as an influential leader with strong followership, adept at defining strategy, establishing strategic alignment and sponsorship, and excelling in its execution.
-                </p>
-                <p>
-                  My key areas of expertise include:
-                </p>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Services GTM Strategy & Execution</li>
-                  <li>Digital Transformation & CX Strategy</li>
-                  <li>Digital Marketing</li>
-                  <li>Agile & Lean Product Development</li>
-                  <li>Cross-functional Team Leadership</li>
-                  <li>Professional Development, Mentoring & Coaching</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Connect & Partnerships - Same Line */}
-            <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-24">
+            {/* Connect & Partnerships - Moved from Right Column */}
+            <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-24 pt-8 md:pt-4">
 
               {/* Connect */}
               <div>
@@ -97,6 +68,44 @@ export function Contact() {
                     className="h-12 w-auto object-contain invert hue-rotate-180 dark:invert-0 dark:hue-rotate-0"
                   />
                 </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Right Column - Image & Bio */}
+          <div className="border-l border-border/50 pl-8 md:pl-12 py-2 flex flex-col justify-start">
+
+            {/* Profile Image */}
+            <div className="mb-12">
+              <img
+                src="/img/rhasaun-campbell.jpg"
+                alt="Rhasaun Campbell"
+                className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            {/* About */}
+            <div className="mb-12">
+              <h3 className="mb-4 text-xl font-mono uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd]">About Rhasaun</h3>
+              <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+                <p>
+                  I am a customer centric and results-driven professional, with over 5+ years in professional services business having honed my craft in roles ranging from customer facing strategy & technology consulting, product development, transformation leader and now leading services strategy and programs of a thriving professional services business.
+                </p>
+                <p>
+                  I am known as an influential leader with strong followership, adept at defining strategy, establishing strategic alignment and sponsorship, and excelling in its execution.
+                </p>
+                <p>
+                  My key areas of expertise include:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Services GTM Strategy & Execution</li>
+                  <li>Digital Transformation & CX Strategy</li>
+                  <li>Digital Marketing</li>
+                  <li>Agile & Lean Product Development</li>
+                  <li>Cross-functional Team Leadership</li>
+                  <li>Professional Development, Mentoring & Coaching</li>
+                </ul>
               </div>
             </div>
 

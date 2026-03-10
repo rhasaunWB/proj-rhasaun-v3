@@ -88,8 +88,8 @@ export function SelectedWork() {
           transition={{ duration: 0.5 }}
         >
           <div>
-            <h2 className="mb-4 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Selected Work</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            <h2 className="mb-4 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">Selected Work</h2>
+            <p className="text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd] dark:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)] max-w-2xl leading-relaxed">
               Proof across enterprise + product.
             </p>
           </div>
@@ -147,7 +147,7 @@ export function SelectedWork() {
                       >
                         <div>
                           <div className="mb-6">
-                            <h3 className="mb-2 text-2xl leading-tight group-hover:text-accent-cyan transition-colors">{caseStudy.title}</h3>
+                            <h3 className="mb-2 text-2xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd] dark:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)] group-hover:text-[#070707] dark:group-hover:text-white transition-colors">{caseStudy.title}</h3>
                             <p className="text-sm font-mono text-muted-foreground mb-4">{caseStudy.tags[0]} / {caseStudy.tags[1]}</p>
                             <p className="text-muted-foreground mb-4 leading-relaxed text-sm lg:text-base">{caseStudy.description}</p>
                           </div>
@@ -174,8 +174,8 @@ export function SelectedWork() {
                       {/* Left Side: Header & Context */}
                       <div className="lg:w-1/3 lg:border-r border-border/50 lg:pr-12 flex flex-col gap-8">
                         <div>
-                          <h3 className="text-4xl md:text-5xl font-medium tracking-tight mb-4 text-accent-cyan">{caseStudy.title}</h3>
-                          <p className="text-xl text-muted-foreground">{caseStudy.subtitle}</p>
+                          <h3 className="text-4xl md:text-5xl font-medium tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd] dark:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)]">{caseStudy.title}</h3>
+                          <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd] dark:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)]">{caseStudy.subtitle}</p>
                         </div>
 
                         <div className="space-y-4">

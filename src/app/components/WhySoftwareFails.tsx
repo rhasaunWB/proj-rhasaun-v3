@@ -11,7 +11,7 @@ export function WhySoftwareFails() {
   return (
     <section className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-20 md:py-32">
-        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">Why Software Fails</h2>
+        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">Why Software Fails</h2>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
           {/* Left Column: Text Content */}
@@ -26,7 +26,7 @@ export function WhySoftwareFails() {
             </div>
 
             <div className="pt-8">
-              <h3 className="mb-8 text-xl md:text-2xl leading-tight">Four failure modes:</h3>
+              <h3 className="mb-8 text-xl md:text-2xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd] dark:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)]">Four failure modes:</h3>
               <ul className="space-y-8">
                 {failures.map((failure, index) => (
                   <li key={index} className="flex gap-4">

@@ -27,9 +27,9 @@ export function HowIWork() {
   return (
     <section id="how" className="min-h-screen bg-background border-b border-border/50">
       <div className="max-w-[98vw] mx-auto px-4 md:px-6 py-12 md:py-20">
-        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight">How I Work</h2>
+        <h2 className="mb-6 text-[clamp(2.5rem,6vw,8rem)] font-medium tracking-tighter leading-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">How I Work</h2>
 
-        <p className="mb-16 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+        <p className="mb-16 text-lg md:text-xl text-white max-w-3xl leading-relaxed">
           A clear loop: discover → design → architect → ship → learn.
         </p>
 
@@ -48,7 +48,7 @@ export function HowIWork() {
               className="border border-border/50 p-6 bg-card hover:bg-muted/50 transition-colors flex flex-col justify-between h-full"
             >
               <div>
-                <h3 className="mb-4 text-3xl leading-tight font-medium">{pillar.title}</h3>
+                <h3 className="mb-4 text-3xl leading-tight font-medium text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 dark:bg-none dark:text-[#9cd7cd] dark:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)]">{pillar.title}</h3>
                 <p className="mb-6 text-muted-foreground leading-relaxed text-base md:text-lg">{pillar.description}</p>
                 <ul className="space-y-3 mb-4">
                   {pillar.laws.map((law, lawIndex) => (
