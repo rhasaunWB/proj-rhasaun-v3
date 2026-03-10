@@ -10,9 +10,18 @@ export function Header() {
 
   // Initialize theme based on document class or system preference
   useEffect(() => {
-    // Check if .light class is already present or system pref
-    const isLight = document.documentElement.classList.contains("light");
-    setIsDarkMode(!isLight);
+    // Check localStorage or default to dark
+    const savedTheme = localStorage.getItem("theme");
+    const isDark = savedTheme === "dark" || (!savedTheme && true); // Default to dark true
+    setIsDarkMode(isDark);
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    }
   }, []);
 
   const toggleTheme = () => {
@@ -22,9 +31,11 @@ export function Header() {
     if (newMode) {
       document.documentElement.classList.remove("light");
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");
+      localStorage.setItem("theme", "light");
     }
   };
 
