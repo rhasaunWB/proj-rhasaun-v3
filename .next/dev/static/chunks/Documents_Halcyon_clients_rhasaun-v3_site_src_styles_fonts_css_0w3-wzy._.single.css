@@ -1,0 +1,17 @@
+/* [project]/Documents/Halcyon/clients/rhasaun-v3/site/src/styles/fonts.css [app-client] (css) */
+:root {
+  --font-sans: "Instrument Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.u-mono {
+  font-family: var(--font-mono);
+}
+
+/*# sourceMappingURL=Documents_Halcyon_clients_rhasaun-v3_site_src_styles_fonts_css_0w3-wzy._.single.css.map*/

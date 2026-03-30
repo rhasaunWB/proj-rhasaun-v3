@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Halcyon/clients/rhasaun-v3/site/src/styles/fonts.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n:root {\n  --font-sans: 'Instrument Sans', sans-serif;\n  --font-mono: 'Space Mono', monospace;\n}\n\nbody {\n  font-family: var(--font-sans);\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.u-mono {\n  font-family: var(--font-mono);\n}\n"],"names":[],"mappings":"AAEA;;;;;AAKA;;;;;;AAMA"}}]
+}

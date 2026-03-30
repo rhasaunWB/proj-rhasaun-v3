@@ -1,0 +1,130 @@
+/* [project]/Documents/Halcyon/clients/rhasaun-v3/site/src/styles/theme.css [app-client] (css) */
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #070707;
+  --foreground: #eaeaea;
+  --card: #111;
+  --card-foreground: #eaeaea;
+  --popover: #070707;
+  --popover-foreground: #eaeaea;
+  --primary: #eaeaea;
+  --primary-foreground: #070707;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #eaeaea;
+  --muted: #1a1a1a;
+  --muted-foreground: #888;
+  --accent: #06b6d4;
+  --accent-foreground: #070707;
+  --accent-cyan: #06b6d4;
+  --accent-orange: #f97316;
+  --destructive: #d4183d;
+  --destructive-foreground: #fff;
+  --border: #333;
+  --input: #1a1a1a;
+  --ring: #f97316;
+  --radius: 0;
+}
+
+.light {
+  --background: #fff;
+  --foreground: #070707;
+  --card: #fff;
+  --card-foreground: #070707;
+  --popover: #eaeaea;
+  --popover-foreground: #070707;
+  --primary: #070707;
+  --primary-foreground: #eaeaea;
+  --secondary: #e0e0e0;
+  --secondary-foreground: #070707;
+  --muted: #e0e0e0;
+  --muted-foreground: #666;
+  --accent: #06b6d4;
+  --accent-foreground: #eaeaea;
+  --accent-cyan: #06b6d4;
+  --accent-orange: #f97316;
+  --destructive: #d4183d;
+  --destructive-foreground: #fff;
+  --border: #ccc;
+  --input: #e0e0e0;
+  --ring: #f97316;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-cyan: var(--accent-cyan);
+  --color-accent-orange: var(--accent-orange);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+@layer base {
+  @apply border-border outline-ring/50;
+
+  @apply bg-background text-foreground;
+
+  @apply bg-accent-orange/30 text-accent-orange;
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    letter-spacing: -.02em;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    max-width: 65ch;
+    line-height: 1.6;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/*# sourceMappingURL=Documents_Halcyon_clients_rhasaun-v3_site_src_styles_theme_css_0w3-wzy._.single.css.map*/

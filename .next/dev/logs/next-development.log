@@ -1,0 +1,8 @@
+{"timestamp":"00:00:01.295","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:11.664","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:15.529","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:16.860","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:01:37.872","source":"Server","level":"LOG","message":"✓ Compiled in 1548ms"}
+{"timestamp":"00:03:32.440","source":"Browser","level":"LOG","message":"[ChromeTransport] chromePort disconnected"}
+{"timestamp":"00:05:13.720","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:43:22.466","source":"Browser","level":"LOG","message":"[ChromeTransport] chromePort disconnected"}
