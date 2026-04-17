@@ -37,7 +37,7 @@ export function ContactForm() {
     const onSubmit = async (data: ContactFormData) => {
         setIsSubmitting(true)
         try {
-            const siteToken = import.meta.env.VITE_SITE_TOKEN
+            const siteToken = process.env.NEXT_PUBLIC_SITE_TOKEN;
 
             const response = await fetch('/api/submit-contact', {
                 method: 'POST',
