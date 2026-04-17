@@ -64,7 +64,7 @@ export function Header() {
         {/* Left Branding */}
         <div className="flex items-center gap-3 text-primary pointer-events-none">
           <img
-            src={isDarkMode ? logoLight : logoDark}
+            src={isDarkMode ? logoLight.src : logoDark.src}
             alt="Logo"
             className="h-3 w-auto"
           />

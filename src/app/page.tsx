@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from "./components/Header";
 import { TechnicalLayout } from "./components/TechnicalLayout";
 import { Hero } from "./components/Hero";
@@ -9,7 +11,7 @@ import { Contact } from "./components/Contact";
 import { StickyScrollSection } from "./components/StickyScrollSection";
 import { Toaster } from "./components/ui/sonner";
 
-export default function App() {
+export default function Page() {
   return (
     <TechnicalLayout>
       <Header />
